@@ -58,3 +58,6 @@ Angular CLI no incluye un framework de pruebas e2e por defecto. Puedes elegir el
 ## Recursos adicionales
 
 Para más información sobre el uso de Angular CLI, incluyendo referencias detalladas de comandos, visita la página [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Desarrollo 
+
