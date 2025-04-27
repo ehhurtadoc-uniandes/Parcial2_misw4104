@@ -12,12 +12,30 @@ import {CommonModule} from '@angular/common';
 export class ListarVehiculosComponent implements OnInit {
 
   vehiculos: Vehiculo[] = [];
+  marcaConteo: { [key: string]: number } = {};
 
   constructor(private vehiculosService: VehiculosService) {}
 
   ngOnInit(): void {
     this.vehiculosService.getVehiculos().subscribe((data) => {
       this.vehiculos = data;
+      this.contarMarcas();
     });
   }
+
+  contarMarcas(): void {
+    this.marcaConteo = {};
+    this.vehiculos.forEach(vehiculo => {
+      if (this.marcaConteo[vehiculo.marca]) {
+        this.marcaConteo[vehiculo.marca]++;
+      } else {
+        this.marcaConteo[vehiculo.marca] = 1;
+      }
+    });
+  }
+
+  obtenerMarcas(): string[] {
+    return Object.keys(this.marcaConteo);
+  }
+
 }

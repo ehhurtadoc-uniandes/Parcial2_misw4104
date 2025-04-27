@@ -26,3 +26,7 @@ footer {
 .tabla-vehiculos {
   padding-right: 30%;
 }
+
+ul.list-unstyled li {
+  margin-bottom: 4px;
+}

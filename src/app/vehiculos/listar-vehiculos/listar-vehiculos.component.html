@@ -17,4 +17,12 @@
       </tr>
       </tbody>
   </table>
+
+  <div class="mt-4">
+    <ul class="list-unstyled">
+      <li *ngFor="let marca of obtenerMarcas()">
+        Total {{ marca }}: {{ marcaConteo[marca] }}
+      </li>
+    </ul>
+  </div>
 </div>
