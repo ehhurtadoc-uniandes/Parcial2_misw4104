@@ -1,0 +1,20 @@
+<div class="tabla-vehiculos">
+  <table class="table table-hover">
+      <thead class="table-dark">
+      <tr>
+          <th>#</th>
+          <th>Marca</th>
+          <th>Línea</th>
+          <th>Modelo</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let vehiculo of vehiculos; let i = index">
+          <td><strong>{{ i + 1 }}</strong></td>
+          <td>{{ vehiculo.marca }}</td>
+          <td>{{ vehiculo.linea }}</td>
+          <td>{{ vehiculo.modelo }}</td>
+      </tr>
+      </tbody>
+  </table>
+</div>

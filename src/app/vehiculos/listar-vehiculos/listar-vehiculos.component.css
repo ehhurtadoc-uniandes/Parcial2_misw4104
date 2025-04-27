@@ -1,0 +1,28 @@
+table {
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+thead {
+  background-color: #343a40;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: middle;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.tabla-vehiculos {
+  padding-right: 30%;
+}
