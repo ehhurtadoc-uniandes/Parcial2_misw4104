@@ -88,7 +88,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "browsers": "ChromeHeadless",
+            "watch": false,
+            "codeCoverage": false
           }
         }
       }
